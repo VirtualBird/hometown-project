@@ -1,0 +1,151 @@
+/**
+Palette: https://scrimba.com/links/hometown-palette
+RED: #E63946
+LIGHT: #F1FAEE
+AQUA: #A8DADC
+LIGHT BLUE: #457B9D
+DARK BLUE: #1D3557
+
+*/
+
+/* CSS Variables for colors */
+:root {
+    --red: #E63946;
+    --light: #F1FAEE;
+    --aqua: #A8DADC;
+    --light-blue: #457B9D;
+    --dark-blue: #1D3557;
+}
+
+body {
+    margin: 0;
+    text-align: center;
+    
+    font-family: 'Inter', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+img {
+    width: 100px;
+}
+
+#hero-section {
+    min-height: 350px;
+    
+    background-image: url(images/city-of-london.jpg);
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#hero-section h1 {
+    margin-top: 100px;
+    margin-bottom: 10px;
+    padding: 2px 14px;
+    border-radius: 10px;
+    
+    color: var(--light);
+    background-color: var(--dark-blue);
+    
+    box-shadow: 0px 0px 10px var(--dark-blue);
+}
+
+#hero-section h2{
+    max-width: 350px;
+    
+    margin-top: 0px;
+    padding: 6px 30px;
+    border-radius: 10px;
+    font-size: 14pt;
+    
+    color: var(--light);
+    background-color: var(--light-blue);
+    
+    box-shadow: 0px 0px 10px var(--dark-blue);
+}
+
+#activities-section{
+    background-color: var(--light);
+}
+
+#activities-section h3{
+    margin: 0px;
+    padding: 40px;
+    font-size: 20pt;
+    color: var(--dark-blue);
+}
+
+#activities{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--dark-blue);
+}
+
+.activities{
+    min-width: 180px;
+    max-width: 180px;
+}
+
+.activity-img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.activity-img:hover{
+    box-shadow: 0px 0px 10px
+}
+
+.activity-p1{
+    font-weight: bold;
+}
+
+.activity-p2{
+    
+}
+
+#guide-section{
+    text-align: center;
+    
+    color: var(--dark-blue);
+    background-color: var(--aqua);
+    
+    margin: 50px auto;
+    padding: 20px 12px;
+    
+    border-bottom: 10px;
+    border-bottom-color: var(--dark-blue);
+    
+    width: 400px;
+    display: flex;
+    justify-content: space-around;
+    gap: 6px;
+    
+    border-radius: 10px;
+    border-bottom: 6px solid var(--dark-blue);
+}
+
+#guide-section:hover{
+    box-shadow: 0px 0px 10px;
+}
+
+#guide-section img{
+    border-radius: 10px;
+    object-fit: cover;
+    width: 180px;
+}
+
+#guide-section h3{
+    font-size: 20pt;
+}
+
+#guide-section p{
+    font-style: italic;
+}
+
+
+
+
